@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  rgm:
+    container_name: rgm_reporte
+    image: rgm-reporte:1.0.0
+    privileged: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:8080"
